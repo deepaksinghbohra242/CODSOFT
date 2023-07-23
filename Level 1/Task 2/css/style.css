@@ -142,29 +142,188 @@ section.about .social a img{
     padding:0.5rem;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
-.servicesText.card {
-    height: 280px;
-    cursor: pointer;
+
+
+/* skills.css */
+section.skills {
+    background-color: var(--light);
+    padding: 6rem 0;
   }
-.servicesIcon {
-    font-size: 36px;
+  
+  section.skills h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 2rem;
+  }
+  
+  .skills-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .skill {
     text-align: center;
+    width: 120px;
+    margin-bottom: 2rem;
+  }
+  
+  .skill img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .skill p {
+    font-size: 1rem;
+    color: var(--ternary);
+    margin-top: 1rem;
+  }
+
+  
+
+/* project.css */
+section.project {
+    background-color: var(--pure);
+    padding: 6rem 0;
+    text-align: center;
+  }
+  
+  section.project h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 2rem;
+  }
+  
+  .project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .project-item {
+    text-align: center;
+    width: 300px;
+    margin-bottom: 2rem;
+  }
+  
+  .project-item img {
     width: 100%;
-}
-.card-title {
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .project-item h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--dark);
+    margin-bottom: 1rem;
+  }
+  
+  .project-item p {
+    font-size: 1rem;
+    color: var(--ternary);
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-item .btn-secondary {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--pure);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-item .btn-secondary:hover {
+    background-color: var(--dark);
+  }
+
+  
+/* resume.css */
+section.resume {
+    background-color: var(--light);
+    padding: 6rem 0;
     text-align: center;
-}
-.card:hover .servicesIcon {
-    color: #008000;
-}
-.servicesText:hover {
-    border: 1px solid #008000;
-}
+  }
+  
+  section.resume h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 2rem;
+  }
+  
+  section.resume p {
+    font-size: 1rem;
+    color: var(--ternary);
+    margin-bottom: 2rem;
+  }
+  
+  section.resume a.btn-primary {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--pure);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  section.resume a.btn-primary:hover {
+    background-color: var(--dark);
+  }
 
+  
+/* contact.css */
+section.contact {
+    background-color: var(--pure);
+    padding: 6rem 0;
+    text-align: center;
+  }
+  
+  section.contact h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 2rem;
+  }
+  
+  section.contact p {
+    font-size: 1.2rem;
+    color: var(--dark);
+    margin-bottom: 1rem;
+  }
 
+  
+/* footer.css */
+footer.footer {
+    background-color: var(--dark);
+    color: var(--pure);
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  footer.footer p {
+    font-size: 1rem;
+  }
+  
+  footer.footer .footer-links {
+    margin-top: 1rem;
+  }
+  
+  footer.footer .footer-links a {
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  footer.footer .footer-links a:hover {
+    color: var(--primary);
+  }
+  
