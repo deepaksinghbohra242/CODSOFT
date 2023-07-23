@@ -148,48 +148,23 @@ body {
     padding: 0;
 }
 
-#skills {
-    background-color: #f1f1f1;
-    padding: 30px;
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
     text-align: center;
 }
-
-.skill-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
 }
 
-.skill-container p {
-    margin-right: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    width: 100px;
-}
-
-.skill {
-    flex: 1;
-    text-align: right;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    transition: width 1s;
-}
-
-.html {
-    background-color: #04AA6D;
-    width: 90%;
-} 
-.css {
-    background-color: #2196F3;
-    width:80%;
-} 
-.js {
-    background-color: #f44336;
-    width: 65%;
-} 
-.php {      
-    background-color: #808080;
-    width: 60%;
-} 
 
