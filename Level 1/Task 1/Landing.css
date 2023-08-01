@@ -14,7 +14,7 @@ header {
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -22,13 +22,11 @@ header {
     padding: 0px;
     
 }
-
 .ili img {
     width: 20px;
     height: 20px;
     padding: 0;
 }
-
 .ili div {
     font-size: 14px;
 }
