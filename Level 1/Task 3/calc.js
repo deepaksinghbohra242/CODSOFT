@@ -1,26 +1,27 @@
-let currentInput = '';
-let result = 0;
+let input = document.getElementById('inputBox');
+let buttons = document.querySelectorAll('button');
 
-function clearDisplay() {
-    currentInput = '';
-    updateDisplay('0');
-}
+let string = "";
+let arr = Array.from(buttons);
+arr.forEach(button => {
+    button.addEventListener('click', (e) =>{
+        if(e.target.innerHTML == '='){
+            string = eval(string);
+            input.value = string;
+        }
 
-function appendInput(value) {
-    currentInput += value;
-    updateDisplay(currentInput);
-}
-
-function updateDisplay(value) {
-    document.getElementById('display').innerText = value;
-}
-
-function calculate() {
-    try {
-        result = eval(currentInput);
-        updateDisplay(result);
-        currentInput = result.toString();
-    } catch (error) {
-        updateDisplay('Error');
-    }
-}
+        else if(e.target.innerHTML == 'AC'){
+            string = "";
+            input.value = string;
+        }
+        else if(e.target.innerHTML == 'DEL'){
+            string = string.substring(0, string.length-1);
+            input.value = string;
+        }
+        else{
+            string += e.target.innerHTML;
+            input.value = string;
+        }
+        
+    })
+})
